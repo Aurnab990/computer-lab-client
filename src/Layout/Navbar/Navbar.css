@@ -1,0 +1,25 @@
+.login-dropdown {
+    position: relative;
+  }
+  
+  .login-summary {
+    cursor: pointer;
+  }
+  
+  .login-dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-dropdown.open ul {
+    display: block;
+  }
+  

@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "extra": "mahfuzur",
+        "name": "Professor Dr. Md. Mahfuzur Rahman",
+        "title": "Dean, Faculty of Engineering & Technology",
+        "mobile": "09602666651 09602666652",
+        "email": "dean_et@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FChairperson.jpg"
+    },
+    {
+        "id": 4,
+        "extra": "mahfuz",
+        "name": "Mr. Muhammad Mahfuz Hasan",
+        "title": "Chairperson and Assistant Professor, Department of Computer Science and Engineering",
+        "mobile": "9602666651, 09602666652",
+        "email": "mhasan@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FMilonSir.jpg"
+    },
+    {
+        "id": 13,
+        "extra": "mousumi bala",
+        "name": "Ms. Mousumi Bala",
+        "title": "Assistant Professor Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "mousumi.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130146%20(Mousumi%20Bala).jpg"
+    },
+    {
+        "id": 15,
+        "extra": "tanzeen tasneem",
+        "name": "Ms. Tazeen Tasneem",
+        "title": "Assistant Professor Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "tazeen.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTazeen_130131.jpg"
+    },
+    {
+        "id": 16,
+        "extra": "tabeen tasneem",
+        "name": "Ms. Tabeen Tasneem",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "tabeen.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTabeen_130132.jpg"
+    },
+    {
+        "id": 17,
+        "extra": "tasniah mohiuddin",
+        "name": "Ms. Tasniah Mohiuddin",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "tasniah.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTasniah_130136.jpg"
+    },
+    {
+        "id": 18,
+        "extra": "nawshin tabassum tanny",
+        "name": "Ms. Nawshin Tabassum Tanny",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "nawshin.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FNawshin_130137.jpg"
+    },
+    {
+        "id": 19,
+        "extra": "amina rahman",
+        "name": "Ms. Amina Rahman",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "aminarahman.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130157_Amina%20Rahman.wepb"
+    },
+    {
+        "id": 20,
+        "extra": "tanzim tamanna shitu",
+        "name": "Ms. Tanzim Tamanna Shitu",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "tanzim.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130158_Tanzim%20Tamanna%20Shitu.webp"
+    },
+    
+    {
+        "id": 22,
+        "extra": "amrita biswas",
+        "name": "Mr. Amrita Biswas",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "amrita.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130160_Mr_Amrita_Biswas.webp"
+    },
+    {
+        "id": 23,
+        "extra": "nusrat jahan",
+        "name": "Ms. Nusrat Jahan",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "nusrat.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130162_Nusrat%20Jahan.webp"
+    },
+    {
+        "id": 24,
+        "extra": "razia sultana",
+        "name": "Ms. Razia Sultana",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "razia.cse@easternuni.edu.bd",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130163_Razia%20Sultana.webp"
+    }
+
+]
