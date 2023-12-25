@@ -7,12 +7,14 @@ import Navbar from '../../Layout/Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import Statistic from '../Statistics/Statistic';
 import Headercontact from '../HeaderContact/Headercontact';
+import Admission from '../Admission/Admission';
 
 const Home = () => {
     return (
         <div className='bg-white'>
             <Navbar></Navbar>
             <Carosel></Carosel>
+            <Admission></Admission>
             <Facultyheader className="bg-white"></Facultyheader>
             <h1 className='text-black text-center text-2xl font-bold bg-white'>BY THE NUMBERS</h1>
             <Statistic></Statistic>

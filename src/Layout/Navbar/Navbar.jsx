@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import '../Navbar/Navbar.css'
+import { AuthContext } from '../../AuthProvider/Authprovider';
 
 const Navbar = () => {
+    const{user} = useContext(AuthContext);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
 
@@ -10,9 +12,9 @@ const Navbar = () => {
     setDropdownOpen(!isDropdownOpen);
   };
     return (
-        <div class="bg-zinc-500 sticky top-0 z-50">
+        <div class="bg-zinc-500 sticky top-0 z-50 bg-fixed">
       <div class="px-4 py-6 mx-auto lg:py-6 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
-        <div class="relative flex items-center justify-between lg:justify-center lg:space-x-16">
+        <div class="flex items-center justify-between lg:justify-center lg:space-x-16">
           <ul class="flex items-center hidden space-x-8 lg:flex">
           <li>
           <NavLink
@@ -101,15 +103,42 @@ const Navbar = () => {
 
               </a>
             </li>
-            <li>
-        <details>
-          <summary class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">LOGIN</summary>
-          <ul className="p-2">
-            <li><a href='#' class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">FACULTY</a></li>
-            <li><a href='#' class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">STUDENT</a></li>
-          </ul>
-        </details>
-      </li>
+            {
+              user?
+              <li>
+              <a>
+                <Link
+                to={"/dashboard"}
+                aria-label="dashboard"
+                title="dashboard"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                DASHBOARD
+                
+
+
+                </Link>
+
+              </a>
+            </li>
+              :
+              <li>
+              <a>
+                <Link
+                to={"/login"}
+                aria-label="dashboard"
+                title="dashboard"
+                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                LOGIN
+                
+
+
+                </Link>
+
+              </a>
+            </li>
+            }
           </ul>
           <div class="lg:hidden">
             <button
@@ -167,24 +196,27 @@ const Navbar = () => {
                         </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Our product"
-                          title="Our product"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          FACILTIES
-                        </a>
+                      <a>
+                <Link
+                to={"/course"}
+                title='Courses'
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                COURSES</Link>
+              </a>
                       </li>
                       <li>
-                        <a
-                          href="/"
-                          aria-label="Product pricing"
-                          title="Product pricing"
-                          class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                        >
-                          FACULTY
-                        </a>
+                      <a>
+                <Link
+                to={"/faculties"}
+                
+                title="Faculty"
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
+              >
+                FACULTY
+                
+                </Link>
+              </a>
                       </li>
                       <li>
                         <a

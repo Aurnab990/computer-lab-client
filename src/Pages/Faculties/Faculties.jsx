@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../Layout/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 
 const Faculties = () => {
     const [teachers, setTeachers] = useState([]);
@@ -60,6 +61,7 @@ const Faculties = () => {
         </div>
       </div>
     </div>
+    <Footer></Footer>
         </div>
     );
 };

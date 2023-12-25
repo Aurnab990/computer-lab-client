@@ -105,7 +105,7 @@ const Placements = () => {
 
 
                 
-                <h1 className='text-black text-start font-bold uppercase -mt-24'>proud aluminai</h1>
+                <h1 className='text-black text-start font-bold uppercase -mt-24'>proud alumni</h1>
 
             <div id='events' className="px-4 py-16 -mt-10 mx-auto sm:max-w-xl md:max-w-full lg:w-11/12 lg:h-full md:px-24 lg:px-8 lg:py-20 ">
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">

@@ -8,8 +8,8 @@ const Carosel = () => {
             style={{ backgroundAttachment: 'fixed' }}
             >
     <div class="px-4 w-full text-center py-24 lg:py-56">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-7xl">Welcome To <span className='text-7xl'><span className='text-blue-500'>E</span>U<span className='text-yellow-400'>P</span>C</span></h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Welcome To Eastern University Computing Club. Most energetic with more curiousness we welcomed you with depth of our heart. Let's explore our Life with programming.</p>
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-7xl">Welcome To <span className='text-7xl'><span className='text-blue-500'>E</span><span className='text-yellow-400'>U</span></span></h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Welcome To Eastern University Computer Science and Engineering Department. Most energetic with more curiousness we welcomed you with depth of our heart. Let's explore our Life with programming.</p>
         <div class="flex flex-col center space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
             <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                 Learn more

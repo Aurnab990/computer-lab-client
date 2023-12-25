@@ -94,18 +94,18 @@ const Dignitaries = () => {
           <a href="#">
             <img
               className="rounded-t-lg"
-              src="https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130160_Mr_Amrita_Biswas.webp"
+              src="https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130158_Tanzim%20Tamanna%20Shitu.webp"
               alt=""
             />
           </a>
           <div className="p-5">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-              Mr. Amrita Biswas
+              Ms. Tanzim Tamanna Shitu
               </h5>
             </a>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Lecturer Engineering & Technology, Co-ordinator of EUCC
+            Lecturer Engineering & Technology, Co-ordinator of CSE Dept.
             </p>
             <a
               href="#"
