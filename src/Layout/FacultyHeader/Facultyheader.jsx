@@ -38,7 +38,7 @@ const Facultyheader = () => {
         <div className="lg:w-1/2">
           <Tilt tiltMaxAngleX={30} tiltMaxAngleY={30}>
             <animated.img
-              src="https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/351473537_1788070115013365_4540322838816792822_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=RhPFywCNW5kAX-5kGCN&_nc_ht=scontent.fdac151-1.fna&oh=00_AfD3y-S6NYb3d8M4GF5X8LQX2FieCw8_uW8jRuKXVFqJVg&oe=6574281A"
+              src="https://scontent.fdac151-1.fna.fbcdn.net/v/t1.6435-9/81761443_1001606636887795_3191435119273443328_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFmr3ssqp8Nko-pOJWfjg4ofO9Gc7DR1AJ870ZzsNHUAqaMP4KfxO2zYf7DDKG9wWr_SUfHOBRVrRThM1HTnZP-&_nc_ohc=DP14EtvhA70AX8-ut56&_nc_ht=scontent.fdac151-1.fna&oh=00_AfDlXo7UP6IOufmCHEZifzUpeSRwTQj93h2ddMLGZMIuGw&oe=65B4F93F"
               className="object-cover w-full h-64 rounded shadow-2xl lg:h-auto lg:max-w-screen-md"
               alt=""
               style={{ ...scrollSpring, ...fadeIn }}

@@ -62,7 +62,7 @@ const Dignitaries = () => {
               </h5>
             </a>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-            Chairperson and Assistant Professor, Department of Computer Science and Engineering
+            Chairperson and Assistant Professor
             </p>
             <a
               href="#"

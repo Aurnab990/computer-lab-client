@@ -8,136 +8,247 @@ import '../Courses/Courses.css'
 
 const Courses = () => {
     return (
-        <div className='bg-gray-200'>
-            <Navbar></Navbar>
-            <div className='grid grid-cols-2'>
-                <div className='first-container'>
-                    <h1 className='text-black text-xl font-bold p-7 uppercase '>First Semester Courses <span className='text-red-400'>credit hour: 18</span></h1>
-                    <Semesterfirst></Semesterfirst>
-                    <h1 className='text-black text-xl font-bold p-7 uppercase '>Second Semester Courses <span className='text-red-400'>credit hour: 18</span></h1>
-                    <Semestersecond></Semestersecond>
+        <div className='bg-white'>
+        <Navbar></Navbar>
 
-                </div>
-                <div className=' ml-40 mt-10'>
-                    
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+  
+         <h1 className='text-blue-500 text-2xl font-semibold text-center'> Course Distribution</h1>
 
-<div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table class="w-full text-sm text-left rtl:text-right text-blue-100 dark:text-blue-100">
-        <thead class="text-xs text-white uppercase bg-blue-600 border-b border-blue-400 dark:text-white">
+         
+
+<div class="relative overflow-x-auto lg:ml-80">
+    <table class="w-2/3 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+        <thead class="text-xs text-white uppercase bg-blue-500 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-                <th scope="col" class="px-6 py-3">
-                    Product name
+                <th scope="col" class="px-6 py-3 rounded-s-lg">
+                    Courses
                 </th>
-                <th scope="col" class="px-6 py-3">
-                    Color
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Category
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Price
-                </th>
-                <th scope="col" class="px-6 py-3">
-                    Action
+                
+                <th scope="col" class="px-6  rounded-e-lg">
+                    Credit Hours
                 </th>
             </tr>
         </thead>
         <tbody>
-            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
-                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                    Apple MacBook Pro 17"
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Mathematics + Statistics
                 </th>
-                <td class="px-6 py-4">
-                    Silver
-                </td>
-                <td class="px-6 py-4">
-                    Laptop
-                </td>
-                <td class="px-6 py-4">
-                    $2999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-white hover:underline">Edit</a>
+                
+                <td class="px-12 py-2 text-black">
+                    18
                 </td>
             </tr>
-            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
-                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                    Microsoft Surface Pro
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Basic Science
                 </th>
-                <td class="px-6 py-4">
-                    White
-                </td>
-                <td class="px-6 py-4">
-                    Laptop PC
-                </td>
-                <td class="px-6 py-4">
-                    $1999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-white hover:underline">Edit</a>
+                
+                <td class="px-12 py-4 text-black">
+                    11
                 </td>
             </tr>
-            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
-                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                    Magic Mouse 2
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Humanities
                 </th>
-                <td class="px-6 py-4">
-                    Black
-                </td>
-                <td class="px-6 py-4">
-                    Accessories
-                </td>
-                <td class="px-6 py-4">
-                    $99
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-white hover:underline">Edit</a>
+                
+                <td class="px-12 py-4 text-black">
+                    17
                 </td>
             </tr>
-            <tr class="bg-blue-600 border-b border-blue-400 hover:bg-blue-500">
-                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                    Google Pixel Phone
+            <tr class="bg-white dark:bg-gray-800">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    Basic + Major Engeneering
                 </th>
-                <td class="px-6 py-4">
-                    Gray
-                </td>
-                <td class="px-6 py-4">
-                    Phone
-                </td>
-                <td class="px-6 py-4">
-                    $799
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-white hover:underline">Edit</a>
-                </td>
-            </tr>
-            <tr class="bg-blue-600 border-blue-400 hover:bg-blue-500">
-                <th scope="row" class="px-6 py-4 font-medium text-blue-50 whitespace-nowrap dark:text-blue-100">
-                    Apple Watch 5
-                </th>
-                <td class="px-6 py-4">
-                    Red
-                </td>
-                <td class="px-6 py-4">
-                    Wearables
-                </td>
-                <td class="px-6 py-4">
-                    $999
-                </td>
-                <td class="px-6 py-4">
-                    <a href="#" class="font-medium text-white hover:underline">Edit</a>
+                
+                <td class="px-12 py-4 text-black">
+                    104
                 </td>
             </tr>
         </tbody>
+        <tfoot>
+            <tr class="font-semibold text-blue-500 dark:text-white">
+                <th scope="row" class="px-6 py-3 text-base">Total</th>
+                <td class="px-12 py-3">150</td>
+                
+            </tr>
+        </tfoot>
     </table>
+
+    
+
 </div>
+<table className='border-2 w-full border-black text-black mt-10'>
+    <tr className='boder-2 border-black '>
+        <th>1<sup>st</sup> Semester</th>
+    </tr>
+  <tr className='border-2 border-black'>
+  <th className='border-2 border-black w-28'>Course Code</th>
+    <th className='border-2 border-black'>Course Title</th>
+    <th className='border-2 border-black w-96'>Hours/week
+    <th className='border-2 border-black w-56'>Theory</th>
+    <th className='border-2 border-black w-56'>Lab</th>
+    </th>
+    <th className='border-2 border-black'>Credits</th>
+    <th className='border-2 border-black'>Prerequisite</th>
+  </tr>
+  <tr>
+  <td className='border-2 border-black'>CSE 109</td>
+    <td className='border-2 border-black text-center'>Computer Fundamentals</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0 </td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+  <tr>
+  <td className='border-2 border-black'>CSE 110</td>
+    <td className='border-2 border-black text-center'>Computer Fundamentals Laboratory</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>1.0</td>
+  </tr>
 
+  <tr>
+  <td className='border-2 border-black'>ENG 103</td>
+    <td className='border-2 border-black text-center'>Learning and Speaking</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
 
-                </div>
-            </div>
+  <tr>
+  <td className='border-2 border-black'>MAT 101</td>
+    <td className='border-2 border-black text-center'>Calculas I</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
 
-            <Footer></Footer>
-        </div>
+  <tr>
+  <td className='border-2 border-black'>PHY 101</td>
+    <td className='border-2 border-black text-center'>Physics I</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+
+  <tr>
+  <td className='border-2 border-black'>PHY 102</td>
+    <td className='border-2 border-black text-center'>Physics I Laboratory</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>1.0</td>
+  </tr>
+</table>
+
+<table className='border-2 w-full border-black text-black mt-10'>
+    <tr className='boder-2 border-black '>
+        <th>2<sup>nd</sup> Semester</th>
+    </tr>
+  <tr className='border-2 border-black'>
+  <th className='border-2 border-black w-28'>Course Code</th>
+    <th className='border-2 border-black'>Course Title</th>
+    <th className='border-2 border-black w-96'>Hours/week
+    <th className='border-2 border-black w-56'>Theory</th>
+    <th className='border-2 border-black w-56'>Lab</th>
+    </th>
+    <th className='border-2 border-black'>Credits</th>
+    <th className='border-2 border-black'>Prerequisite</th>
+  </tr>
+  <tr>
+  <td className='border-2 border-black'>CSE 103</td>
+    <td className='border-2 border-black text-center'>Structure Programming</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0 </td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+  <tr>
+  <td className='border-2 border-black'>CSE 104</td>
+    <td className='border-2 border-black text-center'>Structure Programming Laboratory</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>1.0</td>
+  </tr>
+
+  <tr>
+  <td className='border-2 border-black'>ENG 107</td>
+    <td className='border-2 border-black text-center'>Reading and Grammer</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+
+  <tr>
+  <td className='border-2 border-black'>MAT 103</td>
+    <td className='border-2 border-black text-center'>Calculas II</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+
+  <tr>
+  <td className='border-2 border-black'>PHY 103</td>
+    <td className='border-2 border-black text-center'>Physics II</td>
+    <td className='border-2 border-black'>
+    <td className='border-2 border-black w-80 text-center'>3</td>
+    <td className='border-2 border-black w-80 text-center'>0</td>
+    
+    </td>
+    
+    <td className='border-2 border-black text-center'>3.0</td>
+  </tr>
+
+  
+</table>
+
+    <div>
+        <h1 className='text-center mt-24 text-xl text-red-500'>Note: Further Course will Provide by advisor.</h1>
+   
+  </div>
+</div>
+<Footer></Footer>
+    </div>
     );
 };
 

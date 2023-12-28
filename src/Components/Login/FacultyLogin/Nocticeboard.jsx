@@ -9,7 +9,7 @@ const Nocticeboard = () => {
         const notice = e.target.notice.value;
         const user = { notice };
 
-        fetch('http://localhost:5000/notice', {
+        fetch('https://department-cse.onrender.com/notice', {
           method: 'POST', // or 'PUT'
           headers: {
               'Content-Type': 'application/json',

@@ -11,7 +11,7 @@ const Dashboard = () => {
   
     useEffect(() => {
       // Fetch student data from MongoDB
-      fetch('http://localhost:5000/students')
+      fetch('https://department-cse.onrender.com/students')
         .then((res) => res.json())
         .then((data) => setStudents(data))
         .catch((error) => console.error('Error fetching student data:', error));

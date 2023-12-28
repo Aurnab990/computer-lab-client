@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div className='bg-white'>
             <Navbar></Navbar>
-            <Carosel></Carosel>
+            <Carosel className=""></Carosel>
             <Admission></Admission>
             <Facultyheader className="bg-white"></Facultyheader>
             <h1 className='text-black text-center text-2xl font-bold bg-white'>BY THE NUMBERS</h1>

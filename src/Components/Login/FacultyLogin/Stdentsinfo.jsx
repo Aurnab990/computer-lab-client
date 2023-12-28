@@ -5,7 +5,7 @@ const Stdentsinfo = () => {
     const[students, setStudents] = useState(['']);
     
     useEffect(()=>{
-        fetch('http://localhost:5000/students')
+        fetch('https://department-cse.onrender.com/students')
         .then(res => res.json())
         .then(data=>setStudents(data))
     },[])
@@ -19,16 +19,16 @@ const Stdentsinfo = () => {
           
           {
             students.map(student =>
-                <div className='grid grid-cols-2 lg:grid-cols-3 gap w-full border shadow-xl mt-3'>
+                <div className='grid grid-cols-2 lg:grid-cols-3 gap w-full border rounded-xl shadow-xl mt-3 bg-yellow-300'>
             <div className='flex'>
                 <img className='w-14 h-14 rounded-xl' src='https://png.pngtree.com/png-vector/20190710/ourmid/pngtree-user-vector-avatar-png-image_1541962.jpg'></img>
                 <div>
-                <p className='text-black ml-5 font-medium'>{student.name}</p>
+                <p className='text-black ml-5 font-medium'>{student.name}-{student.studentId}</p>
                 <p className='ml-5'>{student.semester} </p>
             </div>
             </div>
             
-            <div>
+            <div className='text-white'>
                 <p>{student.courses}</p>
 
             </div>

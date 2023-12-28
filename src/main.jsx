@@ -19,6 +19,12 @@ import Notification from './Components/StudentProfile/Dashboard/Notification/Not
 import Facultydashboard from './Components/Login/FacultyLogin/Facultydashboard.jsx'
 import Stdentsinfo from './Components/Login/FacultyLogin/Stdentsinfo.jsx'
 import Nocticeboard from './Components/Login/FacultyLogin/Nocticeboard.jsx'
+import Teacherinfo from './Components/Login/FacultyLogin/Teacherinfo.jsx'
+import Acedemicrules from './Pages/Academicrules/Acedemicrules.jsx'
+import Admissionprocedure from './Pages/Admissionprocedure/Admissionprocedure.jsx'
+import Paymentsystem from './Pages/Admissionprocedure/Paymentsystem.jsx'
+import Tuitionfees from './Pages/TuitionFees/Tuitionfees.jsx'
+import Waiverlist from './Pages/Waiver/Waiverlist.jsx'
 
 
 const router = createBrowserRouter([
@@ -81,6 +87,30 @@ const router = createBrowserRouter([
   {
     path: '/noticeboard',
     element: <Nocticeboard></Nocticeboard>
+  },
+  {
+    path: '/teacherinfo',
+    element: <Teacherinfo></Teacherinfo>
+  },
+  {
+    path: '/academicrules',
+    element: <Acedemicrules></Acedemicrules>
+  },
+  {
+    path: '/admissionprocedure',
+    element: <Admissionprocedure></Admissionprocedure>
+  },
+  {
+    path: '/admissionprocedure/paymentsystem',
+    element: <Paymentsystem></Paymentsystem>
+  },
+  {
+    path: '/feesstructure',
+    element: <Tuitionfees></Tuitionfees>
+  },
+  {
+    path: '/waiverlist',
+    element: <Waiverlist></Waiverlist>
   }
 ])
 

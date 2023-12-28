@@ -3,8 +3,8 @@ import React from 'react';
 
 const Carosel = () => {
     return (
-        <div>
-            <section class="bg-center bg-no-repeat bg-[url('https://scontent.fdac151-1.fna.fbcdn.net/v/t39.30808-6/335588311_965525607719730_4101114505194649804_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=3635dc&_nc_ohc=EyqLBsZAvo4AX_I3G52&_nc_oc=AQmsRx6qPX2qtzfFMCee12G6ChTdjAEypfRdptzSQUZXyADUoZF5K95aoj7gaNS427M&_nc_ht=scontent.fdac151-1.fna&oh=00_AfDSTTPwHSyZ-dk18fQ9RoOLqk06u-MiNhOVL57ipmIuTQ&oe=65736BF1')] bg-gray-700 bg-blend-multiply w-full h-full"
+        <div className=''>
+            <section class="bg-center bg-no-repeat bg-[url('https://scontent.fdac151-1.fna.fbcdn.net/v/t1.6435-9/82261639_1001608386887620_4665192635101609984_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeE9y7lLWiiaDV9Jkql97P_NA_tvzXf1xTED-2_Nd_XFMZ5FS6F5BaGoiYixzYsqeIFdsny4TAIRa3QRzAIePx4o&_nc_ohc=-SOLcN0AtQgAX_9YHEf&_nc_ht=scontent.fdac151-1.fna&oh=00_AfAiIXtUJzvbhZjckZS6RxCS8EI24VXjwbIKeP-GdfOdSw&oe=65B4D1B2')] bg-gray-700 bg-blend-multiply w-full h-full"
             style={{ backgroundAttachment: 'fixed' }}
             >
     <div class="px-4 w-full text-center py-24 lg:py-56">

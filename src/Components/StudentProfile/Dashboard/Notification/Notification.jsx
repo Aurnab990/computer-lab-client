@@ -5,7 +5,7 @@ const Notification = () => {
   const[notices, setNotice] = useState(['']);
 
   useEffect(()=>{
-    fetch('http://localhost:5000/notice')
+    fetch('https://department-cse.onrender.com/notice')
     .then(res=>res.json())
     .then(data=>setNotice(data))
   },[])
