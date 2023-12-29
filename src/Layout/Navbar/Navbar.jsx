@@ -43,6 +43,16 @@ const Navbar = () => {
                 <Link to={"/activity"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Activities</a></li></Link>
                 <li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Facilities</a></li>
                 <Link to={"/academicrules"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Academic rules</a></li></Link>
+                <li>
+            <details>
+              <summary className='text-white font-bold '>LOGIN</summary>
+              <ul className="p-2 w-44 bg-blue-500 text-white rounded">
+                <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>STUDENT</a></li></Link>
+                <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Faculty</a></li></Link>
+                
+              </ul>
+            </details>
+          </li>
               </ul>
             </details>
           </li>
@@ -61,16 +71,7 @@ const Navbar = () => {
           <li><a className='text-white font-bold'>CAREER OPPORTUNITY</a></li>
           <li><a className='text-white font-bold'>PLACEMENTS</a></li>
           <li><a className='text-white font-bold'>CONTACT US</a></li>
-          <li>
-            <details>
-              <summary className='text-white font-bold '>LOGIN</summary>
-              <ul className="p-2 w-44 bg-blue-500 text-white rounded">
-                <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>STUDENT</a></li></Link>
-                <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Faculty</a></li></Link>
-                
-              </ul>
-            </details>
-          </li>
+         
         </ul>
       </div>
       

@@ -8,6 +8,7 @@ import Footer from '../Footer/Footer';
 import Statistic from '../Statistics/Statistic';
 import Headercontact from '../HeaderContact/Headercontact';
 import Admission from '../Admission/Admission';
+import Messagefrom from '../../Layout/MessageFromDean/Messagefrom';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Carosel className=""></Carosel>
             <Admission></Admission>
             <Facultyheader className="bg-white"></Facultyheader>
+            <Messagefrom></Messagefrom>
             <h1 className='text-black text-center text-2xl font-bold bg-white'>BY THE NUMBERS</h1>
             <Statistic></Statistic>
             <Headercontact></Headercontact>

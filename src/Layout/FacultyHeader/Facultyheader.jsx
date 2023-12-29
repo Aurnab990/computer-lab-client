@@ -36,27 +36,57 @@ const Facultyheader = () => {
     >
       <div className="max-w-xl mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row-reverse">
         <div className="lg:w-1/2">
-          <Tilt tiltMaxAngleX={30} tiltMaxAngleY={30}>
-            <animated.img
-              src="https://scontent.fdac151-1.fna.fbcdn.net/v/t1.6435-9/81761443_1001606636887795_3191435119273443328_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd63ad&_nc_eui2=AeFmr3ssqp8Nko-pOJWfjg4ofO9Gc7DR1AJ870ZzsNHUAqaMP4KfxO2zYf7DDKG9wWr_SUfHOBRVrRThM1HTnZP-&_nc_ohc=DP14EtvhA70AX8-ut56&_nc_ht=scontent.fdac151-1.fna&oh=00_AfDlXo7UP6IOufmCHEZifzUpeSRwTQj93h2ddMLGZMIuGw&oe=65B4F93F"
-              className="object-cover w-full h-64 rounded shadow-2xl lg:h-auto lg:max-w-screen-md"
-              alt=""
-              style={{ ...scrollSpring, ...fadeIn }}
-            />
-          </Tilt>
+        <div className="px-4 py-16 mx-auto -mt-36 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+          <h1 className='text-center mb-3 text-blue-500 text-2xl'>NOTICE FROM DEPT.</h1>
+      
+      <div className="max-w-sm space-y-3 sm:mx-auto lg:max-w-lg bg-white border-2 shadow-xl p-2 rounded-xl">
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+          
+          <span className="text-blue-500">
+          Notice for Course Advising of the Spring 2024
+          </span>
+        </div>
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+          
+          <span className="text-blue-500">Conflict Examination Schedule of Final, Summer 2023</span>
+        </div>
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+         
+          <span className="text-blue-500">Conflict Final Examination of Summer 2023 for CSE.</span>
+        </div>
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+          
+          <span className="text-blue-500">
+          Revised Course offering for CSE Spring 2024
+          </span>
+        </div>
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+          
+          <span className="text-blue-500">
+          Publication of rescheduled exam date of EEE ( Batch - 22381)
+          </span>
+        </div>
+        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+          
+          <span className="text-blue-500">
+          CSE Course Offering Spring 2024 Part-1
+          </span>
+        </div>
+      </div>
+    </div>
         </div>
         <div className="lg:w-1/2 lg:pl-12">
           <animated.div style={fadeIn}>
             <div className="-mt-14">
               <div>
                 <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-                  About Us
+                  Missions
                 </p>
               </div>
-              <li className='text-black text-lg'><span className='font-semibold'>Learning and Skill Development:</span> Provide opportunities for members to enhance their technical skills through workshops, seminars, and hands-on projects</li>
-              <li className='text-black text-lg'><span className='font-semibold'>Innovation and Creativity:</span> Encourage and support members in developing innovative projects, applications, and solutions that contribute to the advancement of technology.</li>
-              <li className='text-black text-lg'><span className='font-semibold'>Networking and Collaboration:</span> Facilitate connections among members to promote collaboration on projects, knowledge sharing, and the exchange of ideas. Organize networking events, hackathons</li>
-              <li className='text-black text-lg'><span className='font-semibold'>Community Outreach:</span> Engage with the wider community to promote technology literacy and awareness. Organize outreach programs, coding camps, and workshops for local schools or community</li>
+              <li className='text-black text-lg'><span className='font-semibold'>Learning and Skill Development:</span> Provide opportunities for members to enhance their technical skills through workshops.</li>
+              <li className='text-black text-lg'><span className='font-semibold'>Innovation and Creativity:</span> Encourage and support members in developing innovative projects, applications</li>
+              <li className='text-black text-lg'><span className='font-semibold'>Networking and Collaboration:</span> Facilitate connections among members to promote collaboration on projects, knowledge sharing</li>
+              <li className='text-black text-lg'><span className='font-semibold'>Community Outreach:</span> Engage with the wider community to promote technology literacy and awareness. Organize.</li>
             </div>
             
           </animated.div>

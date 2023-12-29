@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../AuthProvider/Authprovider';
 
 const StudentSignin = () => {
     const {createUser} = useContext(AuthContext);
+    const navigate = useNavigate();
 
     const handlSignin=(e)=>{
         e.preventDefault();
@@ -22,7 +23,9 @@ const StudentSignin = () => {
         createUser(email,password,name,studentid)
         .then(result =>{
             const user = result.user;
-            console.log(user)
+            alert("Account Created, Wait a Sec");
+            navigate("/login")
+            
         })
         .catch(err => console.log(err));
 

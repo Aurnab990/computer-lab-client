@@ -14,8 +14,14 @@ const Faculties = () => {
         <div className='bg-white'>
             <Navbar></Navbar>
 
+            
+
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      
+            <div className='flex justify-center item-center mb-5 mt-2 gap-5'>
+            <button className="block text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Teachers Research Paper</button>
+            <button className="block text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Teacher's Information</button>
+            <button className="block text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Updated CV</button>
+            </div>
       
         <div>
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
