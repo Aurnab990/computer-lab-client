@@ -3,7 +3,7 @@ import React from 'react';
 const Messagefrom = () => {
     return (
         <div>
-            <div className="px-4 py-16 -mt-44 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div className="px-4 py-16 -mt-44 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 bg-orange-600">
       <div className="grid gap-8 row-gap-5 md:grid-cols-2">
         <div className="relative p-px overflow-hidden transition duration-300 transform border rounded shadow-sm hover:scale-105 group hover:shadow-xl">
           <div className="absolute bottom-0 left-0 w-full h-1 duration-300 origin-left transform scale-x-0 bg-deep-purple-accent-400 group-hover:scale-x-100" />
@@ -31,7 +31,7 @@ const Messagefrom = () => {
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                Learn more
+                Know more
               </a>
             </div>
           </div>
@@ -61,7 +61,7 @@ const Messagefrom = () => {
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                Learn more
+                Know more
               </a>
             </div>
           </div>

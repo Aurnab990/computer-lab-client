@@ -18,9 +18,9 @@ const Home = () => {
             <Admission></Admission>
             <Facultyheader className="bg-white"></Facultyheader>
             <Messagefrom></Messagefrom>
-            <h1 className='text-black text-center text-2xl font-bold bg-white'>BY THE NUMBERS</h1>
+            <h1 className='text-black text-center text-2xl font-bold bg-white mt-8'>BY THE NUMBERS</h1>
             <Statistic></Statistic>
-            <Headercontact></Headercontact>
+            
             <h1 className='text-black text-center text-2xl font-bold bg-white mt-12'>DIGNITARIES</h1>
             <Dignitaries></Dignitaries>
 

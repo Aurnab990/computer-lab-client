@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -50,7 +51,7 @@ Email: admission@easternuni.edu.bd
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/admissionInformation"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Overview
@@ -59,7 +60,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/whyEasternUni"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Why Study at EU
@@ -67,7 +68,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/tuitionFees"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Tuition and Fees
@@ -90,7 +91,7 @@ Email: admission@easternuni.edu.bd
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/academicRulesAndProcedures"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Academic Rules & Procedures
@@ -98,23 +99,24 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/rulesOfClassAttendance"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Rules of Class Attendance
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
+                  <Link to={"/admission"}
+                  
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Graduate Admission
-                  </a>
+                  
+                  </Link>
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/testsAndExams"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Tests and Exams
@@ -122,7 +124,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/degreeRequirments"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Degree Requirements
@@ -137,7 +139,7 @@ Email: admission@easternuni.edu.bd
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/facultyOfArts"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Faculty of Arts
@@ -145,7 +147,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/facultyOfBusinessAdministration"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Faculty of Business Administration
@@ -153,7 +155,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/facultyOfEngineering"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Faculty of Engineering and Technology
@@ -161,7 +163,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/facultyOfLaw"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Faculty of Law
@@ -169,7 +171,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/facultyOfLifeScience"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Faculty of Life Science
@@ -184,7 +186,7 @@ Email: admission@easternuni.edu.bd
               <ul className="mt-2 space-y-2">
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/internationalAcademicCollaboration"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     International Academic Collaboration
@@ -192,7 +194,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/admissionInformation"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Admission Office
@@ -200,7 +202,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/admissionInformation"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Registrar Office
@@ -208,7 +210,7 @@ Email: admission@easternuni.edu.bd
                 </li>
                 <li>
                   <a
-                    href="/"
+                    href="https://www.easternuni.edu.bd/admissionInformation"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
                     Location

@@ -13,7 +13,7 @@ const Navbar = () => {
   //   setDropdownOpen(!isDropdownOpen);
   // };
     return (
-      <div className="navbar bg-blue-500 fixed top-0 w-full z-50">
+      <div className="navbar bg-blue-500 fixed top-0 w-full z-50 ">
       <div className="navbar-start">
         <div className="dropdown">
           
@@ -70,7 +70,7 @@ const Navbar = () => {
           <li><a className='text-white font-bold'>RESEARCH</a></li>
           <li><a className='text-white font-bold'>CAREER OPPORTUNITY</a></li>
           <li><a className='text-white font-bold'>PLACEMENTS</a></li>
-          <li><a className='text-white font-bold'>CONTACT US</a></li>
+          <li><a href='https://www.easternuni.edu.bd/contactDirectories' className='text-white font-bold'>CONTACT US</a></li>
          
         </ul>
       </div>

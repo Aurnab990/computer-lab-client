@@ -25,6 +25,7 @@ import Admissionprocedure from './Pages/Admissionprocedure/Admissionprocedure.js
 import Paymentsystem from './Pages/Admissionprocedure/Paymentsystem.jsx'
 import Tuitionfees from './Pages/TuitionFees/Tuitionfees.jsx'
 import Waiverlist from './Pages/Waiver/Waiverlist.jsx'
+import Facultyinfo from './Pages/Faculties/Facultyinfo.jsx'
 
 
 const router = createBrowserRouter([
@@ -111,7 +112,13 @@ const router = createBrowserRouter([
   {
     path: '/waiverlist',
     element: <Waiverlist></Waiverlist>
-  }
+  },
+  {
+    path:'/teacherdetails/:id', 
+    element:<Facultyinfo></Facultyinfo>, 
+    loader: ({params})=> fetch(`https://department-cse.onrender.com/teacherinfo/${params.id}`)
+
+},
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
