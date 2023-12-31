@@ -6,23 +6,18 @@ const Carousel = () => {
   const slides = [
     {
       image: "https://www.easternuni.edu.bd/assets/slider/Pc/crest_giving_ceremony_7th_convocation.webp",
-      text: "Slide 1 Text"
     },
     {
       image: "https://www.easternuni.edu.bd/assets/slider/Pc/physics_olympiad_2023_EEE.webp",
-      text: "Slide 2 Text"
     },
     {
       image: "https://www.easternuni.edu.bd/assets/slider/Pc/FacultyOfBusinessSliderImage-6.JPG",
-      text: "Slide 3 Text"
     },
     {
       image: "https://www.easternuni.edu.bd/assets/slider/Pc/FacultyOfBusinessSliderImage-1.JPG",
-      text: "Slide 4 Text"
     },
     {
       image: "https://www.easternuni.edu.bd/assets/slider/Pc/FacultyOfBusinessSliderImage-3.JPG",
-      text: "Slide 5 Text fjfkf fgkfgk gkfgjj"
     }
   ];
 
@@ -39,10 +34,10 @@ const Carousel = () => {
   const translateValue = -currentIndex * 100 + '%';
 
   return (
-    <div className="">
-      <div className="carousel w-full h-2/3" style={{ overflow: 'hidden' }}>
+    <div className="relative">
+      <div className="carousel w-full h-2/3 relative" style={{ overflow: 'hidden' }}>
         <div
-          className="carousel-item-container"
+          className="carousel-item-container relative"
           style={{
             display: 'flex',
             width: `${slides.length * 100}%`,
@@ -54,17 +49,18 @@ const Carousel = () => {
             <div
               key={index}
               className="carousel-item relative w-full"
-              style={{ flex: '0 0 100%' }}
             >
               <img src={slide.image} alt={`Slide ${index + 1}`} className="w-full" />
-              <div className="carousel-text">
-                <p className='mt-44 text-black'>{slide.text}</p>
-                <p>Newwwwwwwww</p>
-                <p>Newwwwwwwww</p>
-                <p>Newwwwwwwww</p>
-              </div>
             </div>
           ))}
+        </div>
+        {/* Single Fixed Text Container */}
+        <div className="absolute top-0 bg-black bg-opacity-40 left-0 right-0 bottom-0 flex flex-col items-center justify-center text-white">
+          <h1 className='text-5xl  text-white'>
+            Welcome To <span className='text-blue-500'>E</span><span className='text-orange-600'>U</span> CSE Family
+          </h1>
+          <p className='text-center p-2 ml-64 mr-64 items-center justify-center'>We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality according to the needs of today's students and employers.</p> 
+          <button className='border-2 hover:bg-white p-3 rounded-xl hover:text-black'>Learn More...</button>
         </div>
       </div>
     </div>

@@ -26,6 +26,7 @@ import Paymentsystem from './Pages/Admissionprocedure/Paymentsystem.jsx'
 import Tuitionfees from './Pages/TuitionFees/Tuitionfees.jsx'
 import Waiverlist from './Pages/Waiver/Waiverlist.jsx'
 import Facultyinfo from './Pages/Faculties/Facultyinfo.jsx'
+import Updatepaper from './Components/Login/FacultyLogin/Updatepaper.jsx'
 
 
 const router = createBrowserRouter([
@@ -88,6 +89,10 @@ const router = createBrowserRouter([
   {
     path: '/noticeboard',
     element: <Nocticeboard></Nocticeboard>
+  },
+  {
+    path: '/updatepaper',
+    element: <Updatepaper></Updatepaper>
   },
   {
     path: '/teacherinfo',

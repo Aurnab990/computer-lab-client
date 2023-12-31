@@ -1,16 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../Layout/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import { useLoaderData } from 'react-router-dom';
 
 const Facultyinfo = () => {
     const [activeContent, setActiveContent] = useState('education');
-    const{name,img,email,title} = useLoaderData();
-    console.log(name);
+    const[paper, setPaper] = useState([""]);
+    const{name,img,email,title,eduaction} = useLoaderData();
+    console.log(eduaction);
 
   const handleItemClick = (contentId) => {
     setActiveContent(contentId);
   };
+
+  useEffect(()=>{
+    fetch('https://department-cse.onrender.com/research')
+    .then(res => res.json())
+    .then(data => setPaper(data))
+  },[]);
+
+  const filteredPapers = paper.filter((papers) => papers.email === email);
 
     
 
@@ -44,7 +53,7 @@ const Facultyinfo = () => {
         </li>
         <li>
           <a href='#research' onClick={() => handleItemClick('research')}>
-            Research Interest
+            Research Paper
           </a>
         </li>
         <li>
@@ -64,14 +73,18 @@ const Facultyinfo = () => {
         </li>
       </ul>
 
-      <div className='flex justify-center'>
+      <div className='flex justify-center border-2 '>
       <div id='education' style={{ display: activeContent === 'education' ? 'block' : 'none' }}>
-        <p>D.Eng. in Information Engineering, Hiroshima University, Japan</p>
+        <li className='text-black text-xl mt-3'>{eduaction}</li>
       </div>
 
       <div id='research' style={{ display: activeContent === 'research' ? 'block' : 'none' }}>
         {/* Research Interest content goes here */}
-        <p>Research Interest content goes here.</p>
+        {filteredPapers.map((papers) => (
+          <li className='text-black' key={papers.id}>
+            {papers.paper}
+          </li>
+        ))}
       </div>
 
       <div id='teaching' style={{ display: activeContent === 'teaching' ? 'block' : 'none' }}>
@@ -81,7 +94,7 @@ const Facultyinfo = () => {
 
       <div id='administrative' style={{ display: activeContent === 'administrative' ? 'block' : 'none' }}>
         {/* Administrative Position content goes here */}
-        <p>Administrative Position content goes here.</p>
+        <li className='text-black text-xl mt-3'>{title}</li>
       </div>
 
       <div id='cv' style={{ display: activeContent === 'cv' ? 'block' : 'none' }}>

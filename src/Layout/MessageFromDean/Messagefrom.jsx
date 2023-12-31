@@ -27,7 +27,7 @@ const Messagefrom = () => {
                 </p>
               </div>
               <a
-                href="/"
+                href="https://www.easternuni.edu.bd/facultyOfEngineering"
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
@@ -57,7 +57,7 @@ const Messagefrom = () => {
                 </p>
               </div>
               <a
-                href="/"
+                href="https://www.easternuni.edu.bd/departmentOfCSE"
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >

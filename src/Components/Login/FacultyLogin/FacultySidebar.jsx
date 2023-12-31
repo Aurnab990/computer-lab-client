@@ -23,7 +23,7 @@ const FacultySidebar = () => {
                         <Link to={"/facultydashboard"}><li><a>PROFILE</a></li></Link>
                         <Link to={"/studentinfo"}><li><a>STUDENTS</a></li></Link>
                         <Link to={"/noticeboard"}><li><a>NOTICE BOARD</a></li></Link>
-                        <Link to={""}><li><a>DEPARTMENT NOTICE</a></li></Link>
+                        <Link to={"/updatepaper"}><li><a>UPDATE PAPER</a></li></Link>
                         <Link to={"/teacherinfo"}><li><a>UPDATE INFORMATION</a></li></Link>
                         
                         <p></p>
