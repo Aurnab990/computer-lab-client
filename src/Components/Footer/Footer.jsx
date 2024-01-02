@@ -38,7 +38,7 @@ Khagan, Birulia, Savar, Dhaka,Bangladesh.
               info@easternuni.edu.bd,
 ro@easternuni.edu.bd
 For Admission : +8801844169651, +8801844169659,
-+8801844169660, +8801741300002
++8801844169660, +8801741300002 <br></br>
 Email: admission@easternuni.edu.bd
               </p>
             </div>

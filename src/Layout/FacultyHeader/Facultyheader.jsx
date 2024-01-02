@@ -32,7 +32,7 @@ const Facultyheader = () => {
   return (
     <div
       ref={ref}
-      className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full bg-white"
+      className="relative px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full bg-white mt-8"
     >
       <div className="max-w-xl mx-auto lg:max-w-screen-xl flex flex-col lg:flex-row-reverse">
         <div className="lg:w-1/2">
@@ -42,35 +42,35 @@ const Facultyheader = () => {
       <div className="max-w-sm space-y-3 sm:mx-auto lg:max-w-lg bg-white border-2 shadow-xl p-2 rounded-xl">
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <span className="text-blue-500">
-          Notice for Course Advising of the Spring 2024
-          </span>
+          <li className="text-blue-500">
+          <a href='https://www.easternuni.edu.bd/noticePage'>Notice for Course Advising of the Spring 2024</a>
+          </li>
         </div>
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <span className="text-blue-500">Conflict Examination Schedule of Final, Summer 2023</span>
+          <li className="text-blue-500"><a href='https://www.easternuni.edu.bd/noticePage'>Conflict Examination Schedule of Final, Summer 2023</a></li>
         </div>
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
          
-          <span className="text-blue-500">Conflict Final Examination of Summer 2023 for CSE.</span>
+          <li className="text-blue-500"><a className='' href='https://www.easternuni.edu.bd/noticePage'>Conflict Final Examination of Summer 2023 for CSE</a>.</li>
         </div>
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <span className="text-blue-500">
-          Revised Course offering for CSE Spring 2024
-          </span>
+          <li className="text-blue-500">
+          <a href='https://www.easternuni.edu.bd/noticePage'>Revised Course offering for CSE Spring 2024</a>
+          </li>
         </div>
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <span className="text-blue-500">
-          Publication of rescheduled exam date of EEE ( Batch - 22381)
-          </span>
+          <li className="text-blue-500">
+          <a href='https://www.easternuni.edu.bd/noticePage'>Publication of rescheduled exam date of EEE ( Batch - 22381)</a>
+          </li>
         </div>
         <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <span className="text-blue-500">
-          CSE Course Offering Spring 2024 Part-1
-          </span>
+          <li className="text-blue-500">
+          <a href='https://www.easternuni.edu.bd/noticePage'>CSE Course Offering Spring 2024 Part-1</a>
+          </li>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const Home = () => {
         <div className='bg-white'>
             <Navbar></Navbar>
             <Carosel className=""></Carosel>
-            <Admission></Admission>
+            <Admission className=""></Admission>
             <Facultyheader className="bg-white"></Facultyheader>
             <Messagefrom></Messagefrom>
             <h1 className='text-black text-center text-2xl font-bold bg-white mt-8'>BY THE NUMBERS</h1>
