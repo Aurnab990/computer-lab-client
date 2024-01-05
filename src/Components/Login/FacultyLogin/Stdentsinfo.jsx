@@ -8,7 +8,23 @@ const Stdentsinfo = () => {
         fetch('https://department-cse.onrender.com/students')
         .then(res => res.json())
         .then(data=>setStudents(data))
-    },[])
+    },[]);
+    const handleDelete = id =>{
+      const proceed = window.confirm("Are you sure to Delete?");
+      if(proceed){
+          console.log("Deleting user id:", id);
+          const url = `https://department-cse.onrender.com/students/${id}`;
+          fetch(url, {
+              method: "DELETE"
+          })
+          .then(res => res.json())
+          .then(data => {
+              console.log(data);
+              const remainingItems = students.filter(users => users._id !== id);
+              setStudents(remainingItems);
+          })
+      }
+  }
     return (
         <div className="drawer lg:drawer-open  bg-white">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -33,8 +49,8 @@ const Stdentsinfo = () => {
 
             </div>
             <div className='flex justify-end gap-3'>
-                <button className='btn btn-error'>DELETE</button>
-                <button className='btn btn-success'>UPDATE</button>
+                <button onClick={() => handleDelete(student._id)} className='btn btn-error'>DELETE</button>
+                
             </div>
           </div>
                 

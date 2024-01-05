@@ -3,9 +3,16 @@ import { useSpring, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import Tilt from 'react-parallax-tilt';
 import Footer from '../../Components/Footer/Footer';
+import { Link } from 'react-router-dom';
 
 const Facultyheader = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const[notices,setNotices] = useState(['']);
+  useEffect(()=>{
+    fetch('https://department-cse.onrender.com/notice')
+    .then(res=>res.json())
+    .then(data=>setNotices(data));
+  },[])
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -40,38 +47,17 @@ const Facultyheader = () => {
           <h1 className='text-center mb-3 text-blue-500 text-2xl'>NOTICE FROM DEPT.</h1>
       
       <div className="max-w-sm space-y-3 sm:mx-auto lg:max-w-lg bg-white border-2 shadow-xl p-2 rounded-xl">
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
+        {
+          notices.map(notice=>
+            <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
           <li className="text-blue-500">
-          <a href='https://www.easternuni.edu.bd/noticePage'>Notice for Course Advising of the Spring 2024</a>
+          <Link to={"/allnotice"}>{notice.title}</Link>
           </li>
         </div>
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-          
-          <li className="text-blue-500"><a href='https://www.easternuni.edu.bd/noticePage'>Conflict Examination Schedule of Final, Summer 2023</a></li>
-        </div>
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-         
-          <li className="text-blue-500"><a className='' href='https://www.easternuni.edu.bd/noticePage'>Conflict Final Examination of Summer 2023 for CSE</a>.</li>
-        </div>
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-          
-          <li className="text-blue-500">
-          <a href='https://www.easternuni.edu.bd/noticePage'>Revised Course offering for CSE Spring 2024</a>
-          </li>
-        </div>
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-          
-          <li className="text-blue-500">
-          <a href='https://www.easternuni.edu.bd/noticePage'>Publication of rescheduled exam date of EEE ( Batch - 22381)</a>
-          </li>
-        </div>
-        <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
-          
-          <li className="text-blue-500">
-          <a href='https://www.easternuni.edu.bd/noticePage'>CSE Course Offering Spring 2024 Part-1</a>
-          </li>
-        </div>
+            )
+        }
+        
       </div>
     </div>
         </div>

@@ -15,8 +15,11 @@ const Studentlogin = () => {
         login(email,password)
         .then(result =>{
             const user = result.user;
-            if(user.email==="tazeen.cse@easternuni.edu.bd"){
+            if(user.email==="tazeen.cse@easternuni.edu.bd"||user.email==="nusrat.cse@easternuni.edu.bd"||user.email==="dean_et@easternuni.edu.bd"){
                 navigate("/facultydashboard");
+            }
+            else if(user.email==="admin@gmail.com"){
+                navigate("/adminboard");
             }
             // console.log(user);
             else{

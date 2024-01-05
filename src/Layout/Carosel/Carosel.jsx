@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -59,8 +60,8 @@ const Carousel = () => {
           <h1 className='text-5xl font-semibold  text-white'>
             Welcome To <span className='text-blue-500'>E</span><span className='text-orange-600'>U</span> CSE Family
           </h1>
-          <p className='text-center p-2 ml-64 mr-64 items-center justify-center'>We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality according to the needs of today's students and employers.</p> 
-          <button className='border-2 hover:bg-white p-3 rounded-xl hover:text-black'><a href='https://www.easternuni.edu.bd/departmentOfCSE' target='_blank'>Learn More...</a></button>
+          <p className='text-center p-2 ml-64 mr-64 items-center font-semibold justify-center'>We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality according to the needs of today's students and employers.</p> 
+          <button className='border-2 hover:bg-white p-3 rounded-xl hover:text-black'><Link to={"/learnmore"}>Learn More...</Link></button>
         </div>
       </div>
     </div>

@@ -27,6 +27,18 @@ import Tuitionfees from './Pages/TuitionFees/Tuitionfees.jsx'
 import Waiverlist from './Pages/Waiver/Waiverlist.jsx'
 import Facultyinfo from './Pages/Faculties/Facultyinfo.jsx'
 import Updatepaper from './Components/Login/FacultyLogin/Updatepaper.jsx'
+import Facilities from './Pages/Facilities/Facilities.jsx'
+import Adminboard from './Components/Admin/Admindashboard/Adminboard.jsx'
+import Messagedetails from './Layout/MessageDetails/Messagedetails.jsx'
+import Learnmore from './Layout/LearnMore/Learnmore.jsx'
+import Research from './Pages/Research/Research.jsx'
+import Success from './Components/Admin/Admindashboard/Success/Success.jsx'
+import Teacherpanel from './Components/Admin/Admindashboard/TeacherPanel/Teacherpanel.jsx'
+import Events from './Components/Admin/Admindashboard/Events/Events.jsx'
+import Addteacher from './Components/Admin/Admindashboard/AddTeacher/Addteacher.jsx'
+import Addnotice from './Components/Admin/Admindashboard/AddNotice/Addnotice.jsx'
+import Allnotice from './Layout/FacultyHeader/Allnotice.jsx'
+import Career from './Pages/Career/Career.jsx'
 
 
 const router = createBrowserRouter([
@@ -59,12 +71,49 @@ const router = createBrowserRouter([
     element: <Placements></Placements>
   },
   {
+    path: '/research',
+    element: <Research></Research>
+  },
+  {
+    path: '/success',
+    element: <Success></Success>
+  },
+  {
+    path: '/addteacher',
+    element: <Addteacher></Addteacher>
+  },
+  {
+    path: '/addnotice',
+    element: <Addnotice></Addnotice>
+  },
+  {
+    path: '/allnotice',
+    element: <Allnotice></Allnotice>
+  },
+  {
+    path: '/events',
+    element: <Events></Events>
+  },
+  {
+    path: '/teacherpanel',
+    element: <Teacherpanel></Teacherpanel>
+
+  },
+  {
     path: '/login',
     element: <Studentlogin></Studentlogin>
   },
   {
     path: '/signin',
     element: <StudentSignin></StudentSignin>
+  },
+  {
+    path: '/messagedetails',
+    element: <Messagedetails></Messagedetails>
+  },
+  {
+    path: '/learnmore',
+    element: <Learnmore></Learnmore>
   },
   {
     path: '/dashboard',
@@ -94,10 +143,7 @@ const router = createBrowserRouter([
     path: '/updatepaper',
     element: <Updatepaper></Updatepaper>
   },
-  {
-    path: '/teacherinfo',
-    element: <Teacherinfo></Teacherinfo>
-  },
+  
   {
     path: '/academicrules',
     element: <Acedemicrules></Acedemicrules>
@@ -105,6 +151,14 @@ const router = createBrowserRouter([
   {
     path: '/admissionprocedure',
     element: <Admissionprocedure></Admissionprocedure>
+  },
+  {
+    path: '/facilities',
+    element: <Facilities></Facilities>
+  },
+  {
+    path: '/career',
+    element: <Career></Career>
   },
   {
     path: '/admissionprocedure/paymentsystem',
@@ -115,8 +169,17 @@ const router = createBrowserRouter([
     element: <Tuitionfees></Tuitionfees>
   },
   {
+    path: '/adminboard',
+    element: <Adminboard></Adminboard>
+  },
+  {
     path: '/waiverlist',
     element: <Waiverlist></Waiverlist>
+  },
+  {
+    path: '/update/:id',
+    element: <Teacherinfo></Teacherinfo>,
+    loader: ({params})=> fetch(`https://celtech-server.onrender.com/teacherinfo/${params.id}`)
   },
   {
     path:'/teacherdetails/:id', 

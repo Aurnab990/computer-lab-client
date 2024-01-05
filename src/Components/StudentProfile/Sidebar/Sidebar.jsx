@@ -22,10 +22,10 @@ const Sidebar = () => {
                         {/* Sidebar content here */}
                         <Link to={"/dashboard"}><li><a>STUDENT PROFILE</a></li></Link>
                         <Link to={"/updateprofile"}><li><a>ADD PROFILE</a></li></Link>
-                        <li><a>SUGGESTED COURSES</a></li>
+                        
                         <Link to={"/notification"}><li><a>DEPARTMENT NOTICE</a></li></Link>
-                        <li><a>ADVISOR INFORMATION</a></li>
-                        <button className='mr-24 mt-4 lg:mt-80 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
+                        
+                        <button className='mr-24 mt-4 lg:mt-96 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
                     </ul>
                     
     );

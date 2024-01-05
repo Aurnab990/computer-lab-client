@@ -7,7 +7,8 @@
         "mobile": "09602666651 09602666652",
         "email": "dean_et@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
-        
+        "experience": "Assistant Professor, Department of CSE, Chittagong University of Engineering and Technology (CUET),  from 2005  to 2007",
+        "position": "Dean of Faculty of Engineering &  Technology from 1 June, 2017",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FChairperson.jpg"
     },
     {
@@ -18,7 +19,8 @@
         "mobile": "9602666651, 09602666652",
         "email": "mhasan@easternuni.edu.bd",
         "eduaction":"Masters of Applied Information Technology Royal Institute of Technology (KTH), Stockholm, Sweden",
-        
+        "experience": "Associate Professor 01 October 2022 to till Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position": "Chairperson 01 November 2020 to till Department of Computer Science and Engineering Eastern University, Bangladesh",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FMilonSir.jpg"
     },
     {
@@ -29,7 +31,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "mousumi.cse@easternuni.edu.bd",
         "eduaction":"PhD (Ongoing) Jahangirnagar University, Savar, Bangladesh",
-        
+        "experience":"Senior Lecturer 17 January 2015 to 31 January 2020. Department of Computer Science and Engineering Central Women’s University, 6 Hatkhola Road, Dhaka-1203.",
+        "position":"Assistant Proctor Department of Computer Science and Engineering Central Women’s University, 6 Hatkhola Road, Dhaka-1203. 01 November 2016 to 31 January 2020.",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130146%20(Mousumi%20Bala).jpg"
     },
     {
@@ -40,7 +43,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "tazeen.cse@easternuni.edu.bd",
         "eduaction":"M.Sc. in Computer Science & Engineering Rajshahi University of Engineering & Technology (RUET), Bangladesh",
-       
+        "experience":"Assistant Professor 18 February 2023 to present Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTazeen_130131.jpg"
     },
     {
@@ -51,7 +55,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "tabeen.cse@easternuni.edu.bd",
         "eduaction":"M.Sc. in Computer Science & Engineering Rajshahi University of Engineering & Technology (RUET), Bangladesh",
-        
+        "experience":"Lecturer 20 January 2019 to Present Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTabeen_130132.jpg"
     },
     {
@@ -62,6 +67,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "tasniah.cse@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
+        "experience":"11 June 2019 to Present Lecturer Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "research":"1.Arman Sadi, Tanjila Rehnuma, Rahman, M. M., “Design and Implementation of a Modified AES Cryptography with Fast Key Generation Technique”, 6th IEEE international Women in Engineering (WIE) Conference on Electrical and Computer Engineering 2020 (IEEE WIECON-ECE 2020), 26-27 December, 2020, Bhubaneswar, India.",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FTasniah_130136.jpg"
     },
@@ -73,7 +80,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "nawshin.cse@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
-        
+        "experience":"",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2FNawshin_130137.jpg"
     },
     {
@@ -84,7 +92,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "aminarahman.cse@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
-
+        "experience":"",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130157_Amina%20Rahman.wepb"
     },
     {
@@ -95,6 +104,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "tanzim.cse@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
+        "experience":"16 August 2021 to till Lecturer Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "research":"1.Arman Sadi, Tanjila Rehnuma, Rahman, M. M., “Design and Implementation of a Modified AES Cryptography with Fast Key Generation Technique”, 6th IEEE international Women in Engineering (WIE) Conference on Electrical and Computer Engineering 2020 (IEEE WIECON-ECE 2020), 26-27 December, 2020, Bhubaneswar, India.",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130158_Tanzim%20Tamanna%20Shitu.webp"
     },
@@ -107,7 +118,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "amrita.cse@easternuni.edu.bd",
         "eduaction":"B. Sc. in Computer Science and EngineeringKhulna University of Engineering and Technology (KUET), Bangladesh",
-        
+        "experience":"Lecturer 23 October 2021 to Present Department of Computer Science and Engineering Eastern University, Bangladesh",
+        "position":"Coordinator,Eastern University Computing Club (EUCC)",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130160_Mr_Amrita_Biswas.webp"
     },
     {
@@ -118,7 +130,8 @@
         "mobile": "09602666651, 09602666652",
         "email": "nusrat.cse@easternuni.edu.bd",
         "eduaction":"M. Sc in Computer Science and Engineering Jagannath University, Bangladesh",
-        
+        "experience":"Lecturer 02 February 2022 to Present Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130162_Nusrat%20Jahan.webp"
     },
     {
@@ -129,7 +142,19 @@
         "mobile": "09602666651, 09602666652",
         "email": "razia.cse@easternuni.edu.bd",
         "eduaction":"D.Eng. in Information Engineering, Hiroshima University, Japan",
-       
+        "experience":"Lecturer 01 December 2021 to 31 January 2021 Department of Computer Science and Engineering KhwajaYunus Ali University, Bangladesh Eastern University",
+        "position":"",
+        "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130163_Razia%20Sultana.webp"
+    },
+    {
+        "extra": "Aklima Khatun Akhi",
+        "name": "Mst. Aklima Khatun Akhi",
+        "title": "Lecturer Engineering & Technology",
+        "mobile": "09602666651, 09602666652",
+        "email": "aklima.cse@easternuni.edu.bd",
+        "eduaction":"M.Sc. in Computer Science and Engineering Jahangirnagar University",
+        "experience":"Lecturer 01 August 2023 to till Department of Computer Science and Engineering Faculty of Engineering and Technology Eastern University, Bangladesh",
+        "position":"",
         "img": "https://www.easternuni.edu.bd/assets/Admins%2FOffice_New%2F130163_Razia%20Sultana.webp"
     }
 

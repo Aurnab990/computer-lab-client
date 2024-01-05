@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Messagefrom = () => {
     return (
@@ -26,13 +27,13 @@ const Messagefrom = () => {
                 We have highly qualified, efficient and friendly faculty members who enable our students to gain the skills they need to shape their future.
                 </p>
               </div>
-              <a
-                href="https://www.easternuni.edu.bd/facultyOfEngineering"
+              <Link to={'/messagedetails'}><a
+                
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                Know more
-              </a>
+                Read more
+              </a></Link>
             </div>
           </div>
         </div>
@@ -56,13 +57,15 @@ const Messagefrom = () => {
                 We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality.
                 </p>
               </div>
+              <Link to={'/messagedetails'}>
               <a
-                href="https://www.easternuni.edu.bd/departmentOfCSE"
+                
                 aria-label=""
                 className="inline-flex items-center text-sm font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
               >
-                Know more
+                Read more
               </a>
+              </Link>
             </div>
           </div>
         </div>

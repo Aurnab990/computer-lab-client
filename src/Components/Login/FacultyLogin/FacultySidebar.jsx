@@ -22,12 +22,12 @@ const FacultySidebar = () => {
                         {/* Sidebar content here */}
                         <Link to={"/facultydashboard"}><li><a>PROFILE</a></li></Link>
                         <Link to={"/studentinfo"}><li><a>STUDENTS</a></li></Link>
-                        <Link to={"/noticeboard"}><li><a>NOTICE BOARD</a></li></Link>
+                        
                         <Link to={"/updatepaper"}><li><a>UPDATE PAPER</a></li></Link>
-                        <Link to={"/teacherinfo"}><li><a>UPDATE INFORMATION</a></li></Link>
+                        
                         
                         <p></p>
-                        <button className='mr-24 mt-4 lg:mt-80 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
+                        <button className='mr-24 mt-4 lg:mt-96 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
                     </ul> 
         </div>
     );

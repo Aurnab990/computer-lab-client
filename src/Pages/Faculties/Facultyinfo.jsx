@@ -6,8 +6,8 @@ import { useLoaderData } from 'react-router-dom';
 const Facultyinfo = () => {
     const [activeContent, setActiveContent] = useState('education');
     const[paper, setPaper] = useState([""]);
-    const{name,img,email,title,eduaction} = useLoaderData();
-    console.log(eduaction);
+    const{name,img,email,title,eduaction,position,experience} = useLoaderData();
+    // console.log(eduaction);
 
   const handleItemClick = (contentId) => {
     setActiveContent(contentId);
@@ -89,12 +89,12 @@ const Facultyinfo = () => {
 
       <div id='teaching' style={{ display: activeContent === 'teaching' ? 'block' : 'none' }}>
         {/* Teaching Experience content goes here */}
-        <p>Teaching Experience content goes here.</p>
+        <li className='text-black text-xl mt-3'>{experience}</li>
       </div>
 
       <div id='administrative' style={{ display: activeContent === 'administrative' ? 'block' : 'none' }}>
         {/* Administrative Position content goes here */}
-        <li className='text-black text-xl mt-3'>{title}</li>
+        <li className='text-black text-xl mt-3'>{position}</li>
       </div>
 
       <div id='cv' style={{ display: activeContent === 'cv' ? 'block' : 'none' }}>

@@ -66,9 +66,7 @@ const Dashboard = () => {
             </div>
 
             <div class="w-2/3 sm:text-center pl-5 mt-10 text-start">
-                <p class="font-poppins font-bold text-black text-heading sm:text-4xl text-2xl"> {matchingStudent.name}
-                    
-                </p>
+                
                 
             </div>
 
@@ -127,7 +125,7 @@ const Dashboard = () => {
                                         </path>
                                     </svg>
                                 </a>
-                                <div>amitpachange21</div>
+                                
                             </div>
 
                         </div>
@@ -143,7 +141,7 @@ const Dashboard = () => {
                 <div class="flex flex-col sm:w-2/3 order-first sm:order-none sm:-mt-10">
 
                     
-                    <div class="py-3">
+                    <div class="py-3 -mt-28">
                         <h2 class="text-lg font-poppins font-bold text-top-color text-black">About Me</h2>
                         <div class="border-2 w-20 border-top-color my-3 text-black w-4/5">
                         <p>Name/ID: {user?.displayName}</p>
@@ -173,14 +171,14 @@ const Dashboard = () => {
                         <div class="border-2 w-20 border-top-color my-3"></div>
                            
                         <div
-    class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:shrink-0" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Woman's Face"/>
-    <div class="text-center space-y-2 sm:text-left">
-        <p className='text-black text-2xl font-semibold'>{matchingStudent.advisorname}</p>
+    class="py-8 px-8 max-w-sm mx-auto bg-white -ml-5 rounded-xl shadow-lg space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
+    
+    
+        <p className='text-black text-2xl font-semibold '>{matchingStudent.advisorname}</p>
         
 
         <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
-    </div>
+    
 </div>
 
                     </div>
