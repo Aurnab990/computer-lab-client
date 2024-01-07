@@ -24,11 +24,12 @@ const Adminsidebar = () => {
                         <Link to={"/teacherpanel"}><li className='uppercase'><a>teachers</a></li></Link>
                         <Link to={"/addteacher"}><li className='uppercase'><a>Add Teacher</a></li></Link>
                         <Link to={"/addnotice"}><li className='uppercase'><a>Add Notice</a></li></Link>
+                        <Link to={"/allnotices"}><li className='uppercase'><a>All Notice</a></li></Link>
                         <Link to={"/events"}><li className='uppercase'><a>Create Events</a></li></Link>
                         <Link to={"/success"}><li className='uppercase'><a>student success</a></li></Link>
                         
                         <p></p>
-                        <button className='mr-24 mt-4 lg:mt-72 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
+                        <button className='mr-24 mt-4 lg:mt-60 bg-red-800 text-white rounded-xl' onClick={handleLogout}>LOGOUT</button>
                     </ul> 
         </div>
     );

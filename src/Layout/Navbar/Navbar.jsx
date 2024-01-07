@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <div style={{ borderBottom: '6px solid #FFA500' }} className="navbar bg-blue-900 border-b-3 border-orange-500 fixed top-0 w-full z-50 ">
       <div className="navbar-start">
-        <img className='w-28 h-12' src={img}></img>
+        <img className='w-28 h-12' src="https://globaluniversity.edu.bd/wp-content/uploads/2018/09/CSE.png"></img>
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <li>
               <details>
                 <summary className='text-white font-bold '>ADMISSION</summary>
-                <ul className="p-2 w-44 bg-blue-500 text-white rounded">
+                <ul className="p-2 w-44 bg-blue-900 text-white rounded">
                   <Link to={"/admissionprocedure"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Admission Procedure</a></li></Link>
                   <Link to={"/feesstructure"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Tution and fees</a></li></Link>
                   <Link to={"/waiverlist"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Scholarships and waiver</a></li></Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary className='text-white font-bold '>ACADEMIC</summary>
-              <ul className="p-2 w-44 bg-blue-500 text-white rounded">
+              <ul className="p-2 w-44 bg-blue-900 text-white rounded">
                 <Link to={"/course"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Courses</a></li></Link>
                 <Link to={"/faculties"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Faculty</a></li></Link>
                 <Link to={"/activity"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Activities</a></li></Link>
@@ -78,7 +78,7 @@ const Navbar = () => {
                 <li>
                   <details>
                     <summary className='text-white font-bold '>LOGIN</summary>
-                    <ul className="p-2 w-44 bg-blue-500 text-white rounded">
+                    <ul className="p-2 w-44 bg-blue-600 text-white rounded">
                       <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>STUDENT</a></li></Link>
                       <Link to={"/login"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Faculty</a></li></Link>
                     </ul>
@@ -90,7 +90,7 @@ const Navbar = () => {
           <li>
             <details>
               <summary className='text-white font-bold '>ADMISSION</summary>
-              <ul className="p-2 w-44 bg-blue-500 text-white rounded">
+              <ul className="p-2 w-44 bg-blue-900 text-white rounded">
                 <Link to={"/admissionprocedure"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Admission Procedure</a></li></Link>
                 <Link to={"/feesstructure"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Tution and fees</a></li></Link>
                 <Link to={"/waiverlist"}><li><a className='hover:bg-white hover:text-orange-500 font-bold uppercase'>Scholarships and waiver</a></li></Link>

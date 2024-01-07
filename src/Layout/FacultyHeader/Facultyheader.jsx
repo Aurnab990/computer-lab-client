@@ -46,13 +46,14 @@ const Facultyheader = () => {
         <div className="px-4 py-16 mx-auto -mt-36 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
           <h1 className='text-center mb-3 text-blue-500 text-2xl'>NOTICE FROM DEPT.</h1>
       
-      <div className="max-w-sm space-y-3 sm:mx-auto lg:max-w-lg bg-white border-2 shadow-xl p-2 rounded-xl">
+      <div className="max-w-sm space-y-3 sm:mx-auto lg:max-w-lg bg-blue-900 border-2 shadow-xl p-2 rounded-xl">
         {
           notices.map(notice=>
             <div className="flex items-center p-2 duration-300 transform border rounded shadow hover:scale-105 sm:hover:scale-110">
           
-          <li className="text-blue-500">
+          <li className="text-white text-xl font-medium p-2">
           <Link to={"/allnotice"}>{notice.title}</Link>
+          <p className='text-black text-sm lg:ml-8'>{notice && notice.notice && typeof notice.notice === 'string' ? notice.notice.slice(0, 50) + '...' : ''}</p>
           </li>
         </div>
             )

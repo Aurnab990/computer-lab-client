@@ -57,10 +57,10 @@ const Carousel = () => {
         </div>
         {/* Single Fixed Text Container */}
         <div className="absolute top-0 bg-black bg-opacity-40 left-0 right-0 bottom-0 flex flex-col items-center justify-center text-white">
-          <h1 className='text-5xl font-semibold  text-white'>
+          <h1 className=' hidden lg:block text-5xl font-semibold sm:text-center  text-white'>
             Welcome To <span className='text-blue-500'>E</span><span className='text-orange-600'>U</span> CSE Family
           </h1>
-          <p className='text-center p-2 ml-64 mr-64 items-center font-semibold justify-center'>We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality according to the needs of today's students and employers.</p> 
+          <p className='hidden lg:block text-center p-2 ml-64 mr-64 items-center font-semibold justify-center'>We welcome you on behalf of the Department of Computer Science and Engineering (CSE) at Eastern University. Our department makes every effort to improve the educational quality according to the needs of today's students and employers.</p> 
           <button className='border-2 hover:bg-white p-3 rounded-xl hover:text-black'><Link to={"/learnmore"}>Learn More...</Link></button>
         </div>
       </div>

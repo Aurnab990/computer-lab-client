@@ -39,6 +39,7 @@ import Addteacher from './Components/Admin/Admindashboard/AddTeacher/Addteacher.
 import Addnotice from './Components/Admin/Admindashboard/AddNotice/Addnotice.jsx'
 import Allnotice from './Layout/FacultyHeader/Allnotice.jsx'
 import Career from './Pages/Career/Career.jsx'
+import Allnotices from './Components/Admin/Admindashboard/AllNotices/Allnotices.jsx'
 
 
 const router = createBrowserRouter([
@@ -163,6 +164,10 @@ const router = createBrowserRouter([
   {
     path: '/admissionprocedure/paymentsystem',
     element: <Paymentsystem></Paymentsystem>
+  },
+  {
+    path: '/allnotices',
+    element: <Allnotices></Allnotices>
   },
   {
     path: '/feesstructure',

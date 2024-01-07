@@ -22,10 +22,11 @@ const Placements = () => {
           
             {
               success.map(student=>
-                <div className="p-5 bg-blue-800 overflow-hidden text-left transition-shadow duration-200 bg-white rounded shadow-xl group hover:shadow-2xl">
+                <div className="p-5 bg-blue-800 overflow-hidden text-left transition-shadow duration-200 rounded shadow-xl group hover:shadow-2xl">
               
-                <p className="mb-2 font-medium text-red-500">Name: {student.name}</p>
+                <p className="mb-2 font-medium text-red-900">Name: {student.name}</p>
                 <p className="mb-2 font-medium text-yellow-400">ID: {student.id}</p>
+                <p className="mb-2 font-medium text-yellow-400">Batch: {student.batch}th</p>
                
                 <p className="mb-2 font-medium text-yellow-400">Now: {student.position}</p>
               <p className="mb-2 font-medium text-yellow-400">At: {student.company}</p>
