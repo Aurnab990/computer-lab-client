@@ -1,28 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import Adminsidebar from '../Adminsidebar';
 
-const Teacherpanel = () => {
-    const [teachers, setTeachers] = useState([]);
+const Allsuccess = () => {
+    const [success, setSuccess] = useState([]);
 
     useEffect(() => {
-        fetch('https://department-cse.onrender.com/teacherinfo')
+        fetch('https://department-cse.onrender.com/success')
             .then(res => res.json())
-            .then(data => setTeachers(data))
+            .then(data => setSuccess(data))
     }, []);
 
     const handleDelete = id =>{
         const proceed = window.confirm("Are you sure to Delete?");
         if(proceed){
             // console.log("Deleting user id:", id);
-            const url = `https://department-cse.onrender.com/teacherinfo/${id}`;
+            const url = `https://department-cse.onrender.com/success/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                const remainingItems = teachers.filter(users => users._id !== id);
-                setTeachers(remainingItems);
+                const remainingItems = success.filter(users => users._id !== id);
+                setSuccess(remainingItems);
             })
         }
     }
@@ -34,20 +34,23 @@ const Teacherpanel = () => {
           {/* Page content here */}
           <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">MENU</label>
           
-<h1 className='text-center text-black text-xl font-semibold mb-10'>Teacher's Panel</h1>
+<h1 className='text-center text-black text-xl font-semibold mb-10'>Student Success Panel</h1>
 {
-            teachers.map(teacher =>
+            success.map(newsuccess =>
                 <div className='grid grid-cols-2 lg:grid-cols-3 gap w-full border rounded-xl shadow-xl mt-3 bg-yellow-300'>
             <div className='flex'>
-                <img className='w-14 h-14 rounded-xl' src={teacher.img}></img>
+                
                 <div>
-                <p className='text-black ml-5 font-medium'>{teacher.name}</p>
-                <p className='ml-5'>{teacher.title} </p>
+                <p className='text-black ml-5 font-medium'>{newsuccess.name}</p>
+                <p className='ml-5'>ID: {newsuccess.id} </p>
+                <p className='ml-5'>Batch: {newsuccess.batch} </p>
+                <p className='ml-5'>Post.: {newsuccess.position} </p>
+                <p className='ml-5'>Company: {newsuccess.company} </p>
             </div>
             </div>
             
             <div className='flex justify-end items-center -mr-72 gap-3'>
-                <button onClick={() => handleDelete(teacher._id)} className='btn btn-error'>DELETE</button>
+                <button onClick={() => handleDelete(newsuccess._id)} className='btn btn-error'>DELETE</button>
                 
             </div>
           </div>
@@ -67,4 +70,4 @@ const Teacherpanel = () => {
     );
 };
 
-export default Teacherpanel;
+export default Allsuccess;

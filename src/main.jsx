@@ -40,6 +40,8 @@ import Addnotice from './Components/Admin/Admindashboard/AddNotice/Addnotice.jsx
 import Allnotice from './Layout/FacultyHeader/Allnotice.jsx'
 import Career from './Pages/Career/Career.jsx'
 import Allnotices from './Components/Admin/Admindashboard/AllNotices/Allnotices.jsx'
+import Allevents from './Components/Admin/Admindashboard/Allevents/Allevents.jsx'
+import Allsuccess from './Components/Admin/Admindashboard/Allsuccess/Allsuccess.jsx'
 
 
 const router = createBrowserRouter([
@@ -80,6 +82,10 @@ const router = createBrowserRouter([
     element: <Success></Success>
   },
   {
+    path: '/allsuccess',
+    element: <Allsuccess></Allsuccess>
+  },
+  {
     path: '/addteacher',
     element: <Addteacher></Addteacher>
   },
@@ -94,6 +100,10 @@ const router = createBrowserRouter([
   {
     path: '/events',
     element: <Events></Events>
+  },
+  {
+    path: '/allevents',
+    element: <Allevents></Allevents>
   },
   {
     path: '/teacherpanel',

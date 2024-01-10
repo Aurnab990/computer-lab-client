@@ -1,32 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import Adminsidebar from '../Adminsidebar';
 
-const Teacherpanel = () => {
-    const [teachers, setTeachers] = useState([]);
-
-    useEffect(() => {
-        fetch('https://department-cse.onrender.com/teacherinfo')
-            .then(res => res.json())
-            .then(data => setTeachers(data))
-    }, []);
+const Allevents = () => {
+    const[events, setEvents] = useState(['']);
+    useEffect(()=>{
+        fetch('https://department-cse.onrender.com/events')
+        .then(res=>res.json())
+        .then(data=>setEvents(data))
+    },[]);
 
     const handleDelete = id =>{
         const proceed = window.confirm("Are you sure to Delete?");
         if(proceed){
             // console.log("Deleting user id:", id);
-            const url = `https://department-cse.onrender.com/teacherinfo/${id}`;
+            const url = `https://department-cse.onrender.com/events/${id}`;
+            // const url = `http://localhost:5000/notice/${id}`;
             fetch(url, {
                 method: "DELETE"
             })
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                const remainingItems = teachers.filter(users => users._id !== id);
-                setTeachers(remainingItems);
+                const remainingItems = events.filter(users => users._id !== id);
+                setEvents(remainingItems);
             })
         }
     }
-
     return (
         <div className="drawer lg:drawer-open  bg-white">
         <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -34,20 +33,23 @@ const Teacherpanel = () => {
           {/* Page content here */}
           <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">MENU</label>
           
-<h1 className='text-center text-black text-xl font-semibold mb-10'>Teacher's Panel</h1>
+<h1 className='text-center text-black text-xl font-semibold mb-10'>Event Panel</h1>
 {
-            teachers.map(teacher =>
+            events.map(event =>
                 <div className='grid grid-cols-2 lg:grid-cols-3 gap w-full border rounded-xl shadow-xl mt-3 bg-yellow-300'>
             <div className='flex'>
-                <img className='w-14 h-14 rounded-xl' src={teacher.img}></img>
+                
                 <div>
-                <p className='text-black ml-5 font-medium'>{teacher.name}</p>
-                <p className='ml-5'>{teacher.title} </p>
+                <p className='text-black ml-5 font-bold'>{event.name}</p>
+                <p className='text-black ml-5'>{event.date}</p>
+                <p className='text-black ml-5'>{event.venue}</p>
+                <p className='text-black ml-5'>{event.prize}</p>
+                
             </div>
             </div>
             
             <div className='flex justify-end items-center -mr-72 gap-3'>
-                <button onClick={() => handleDelete(teacher._id)} className='btn btn-error'>DELETE</button>
+                <button onClick={() => handleDelete(event._id)} className='btn btn-error'>DELETE</button>
                 
             </div>
           </div>
@@ -67,4 +69,4 @@ const Teacherpanel = () => {
     );
 };
 
-export default Teacherpanel;
+export default Allevents;

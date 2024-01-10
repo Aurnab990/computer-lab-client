@@ -40,13 +40,13 @@ const Allnotices = () => {
             <div className='flex'>
                 
                 <div>
-                <p className='text-black ml-5 font-medium'>{notice.title}</p>
-                <p className='text-black'>{notice.notice}</p>
+                <p className='text-black ml-5 font-bold'>{notice.title}</p>
+                <p className='text-black ml-5'>{notice.notice}</p>
                 
             </div>
             </div>
             
-            <div className='flex justify-end -mr-72 gap-3'>
+            <div className='flex justify-end items-center -mr-72 gap-3'>
                 <button onClick={() => handleDelete(notice._id)} className='btn btn-error'>DELETE</button>
                 
             </div>
