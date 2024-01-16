@@ -1,8 +1,12 @@
+# Deployment
 
+## Frontend
 
-#Deployment#
- For frontend- Firebase web hosting
- For Backend- Render hosting 
+- **Firebase Web Hosting:** Your frontend is deployed using Firebase Web Hosting.
+
+## Backend
+
+- **Render Hosting:** Your backend is deployed using Render hosting.
 
 
 
